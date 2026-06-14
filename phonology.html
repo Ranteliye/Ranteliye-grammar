@@ -18,20 +18,112 @@
 
   <main class="container">
     <section class="card">
-      <h2>音素・音韻</h2>
+      <h2>音韻体系の基本性格</h2>
       <div class="editable">
-        ここに音素一覧、音韻規則、音節構造などを書いてくださいませ。
+        <p>ランテル語は <strong>制約主導型・軽量音節志向の膠着語的音韻体系</strong> を持つ。</p>
+        <p>設計思想：</p>
+        <ul>
+          <li>流動性（母音中心）</li>
+          <li>輪郭保持（語頭制約）</li>
+          <li>子音による境界明示</li>
+          <li>呼気による時間標識</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>音素体系</h2>
+      <h3>母音</h3>
+      <div class="editable">
+        <table class="table">
+          <thead><tr><th>前舌</th><th>中央</th><th>後舌</th><th>備考</th></tr></thead>
+          <tbody>
+            <tr><td>i</td><td>ə（弱勢）</td><td>u</td><td>強勢核は e / i / u に置かれやすい</td></tr>
+            <tr><td>e</td><td></td><td></td><td>長母音は独立音素というより融合で生じる</td></tr>
+          </tbody>
+        </table>
       </div>
 
-      <h3>編集メモ</h3>
+      <h3>子音（概略）</h3>
       <div class="editable">
-        音素リストやルールは、手元のメモからそのまま貼り付けても構いませんし、表形式に整えても構いませんわ。
+        <table class="table">
+          <thead><tr><th>カテゴリ</th><th>音素</th><th>メモ</th></tr></thead>
+          <tbody>
+            <tr><td>破裂音</td><td>p, b, t, d, k, g</td><td></td></tr>
+            <tr><td>摩擦音</td><td>s, z, h</td><td></td></tr>
+            <tr><td>鼻音</td><td>m, n</td><td>語幹末 -n の処理は特別</td></tr>
+            <tr><td>流音</td><td>r, l</td><td></td></tr>
+            <tr><td>特殊</td><td>c, q</td><td>口蓋垂摩擦音</td></tr>
+          </tbody>
+        </table>
+        <p>備考：半母音的機能は母音融合で表れる（書記上は独立しない）。語頭単独無声破裂音は制限される。</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>音節構造と語頭制約</h2>
+      <div class="editable">
+        <p>基本音節型： (C)V(C)</p>
+        <ul>
+          <li>CCCは存在しない / CCは最大2子音</li>
+          <li>語頭VCCは同一無声子音のみ許可</li>
+          <li>語頭VCの場合、Cは有声子音のみ</li>
+        </ul>
+      </div>
+
+      <h3>語頭VC制限</h3>
+      <div class="editable">
+        <p>語頭が VC の場合、C は必ず有声。</p>
+        <p>例：ignes / ort / edor</p>
+      </div>
+
+      <h3>語頭VCC制限</h3>
+      <div class="editable">
+        <p>語頭が VCC の場合、CC が同一無声子音であれば許可。</p>
+        <p>例：accer, app…（想定形）</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>中央母音 /ə/ と母音連続</h2>
+      <div class="editable">
+        <h3>/ə/ の性質</h3>
+        <ul>
+          <li>多音節語の中間に出現（語末は原則なし）</li>
+          <li>強勢を担わない（緩衝母音）</li>
+        </ul>
+      </div>
+
+      <div class="editable">
+        <h3>母音連続の扱い</h3>
+        <p>母音連続は許容。ただし既存の二重母音規則に一致する場合のみ音変化が起こる。</p>
+        <table class="table">
+          <thead><tr><th>二重母音（綴り）</th></tr></thead>
+          <tbody>
+            <tr><td>ai / au / ei / eu / eo</td></tr>
+            <tr><td>iu / ua / ui / ue / uo / ou</td></tr>
+          </tbody>
+        </table>
+        <p>例：ke + i → kei → /kiː/、mata + i → matai → /mate/</p>
+        <p>重要：語幹は変化せず、音韻処理のみ。</p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>特殊規則（鼻音保持・過去子音弱化）</h2>
+      <div class="editable">
+        <h3>鼻音保持規則</h3>
+        <p>語幹が -n で終わる場合、Xn + V → XnnV</p>
+        <p>例：an + e → anne、fon + i → fonni</p>
+      </div>
+
+      <div class="editable">
+        <h3>過去を示す -c の弱化</h3>
+        <p>-c は /χ/ → /h/ → 呼気化へ弱化しやすいが、完全脱落は避けられる（時制区別のため）。</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    最終更新：2026-06-13
-  </footer>
+  <footer class="site-footer">最終更新：2026-06-13</footer>
 </body>
 </html>
