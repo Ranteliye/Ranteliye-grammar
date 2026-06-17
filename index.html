@@ -3,39 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ランテル語 文法解説</title>
+  <title>ランテル語</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="site-header">
-    <h1>ランテル語 文法解説</h1>
-    <nav class="nav">
-      <a href="index.html#overview">概要</a>
-      <a href="phonology.html">音素・音韻</a>
-      <a href="morphology.html">形態論</a>
-    </nav>
+    <div class="topbar">
+      <a class="logo" href="index.html">ランテル語</a>
+      <nav class="nav">
+        <a href="index.html">トップ</a>
+        <a href="phonology.html">音素・音韻</a>
+        <a href="morphology.html">形態論</a>
+        <a href="syntax.html">統語論</a>
+        <a href="examples.html">例文</a>
+        <a href="dictionary.html">辞書</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section id="overview" class="card">
-      <h2>概要</h2>
-      <div class="editable">
-        ここにランテル語の紹介と、このサイトの構成（音素・音韻 / 形態論 / 統語論 / 例文 / 辞書など）を書いてくださいませ。
+  <main>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Grammar / Phonology / Morphology</p>
+        <h1 class="hero-title">ランテル語 文法解説サイト</h1>
+        <p class="hero-tagline">
+          制約主導・流動性・輪郭保持の設計思想をもとにした、軽量音節志向の人工言語。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#cards">目次</a>
+          <a class="button" href="phonology.html">音素・音韻へ</a>
+        </div>
       </div>
+    </section>
 
-      <h3>ページ一覧</h3>
-      <div class="editable">
-        <ul>
-          <li><a href="phonology.html">音素・音韻</a>：音素一覧・音韻規則（※後から調整可）</li>
-          <li><a href="morphology.html">形態論</a>：品詞 / 語形成 / 活用（※後から調整可）</li>
-          <li><em>今後追加</em>：統語論 / 例文集 / 辞書 など</li>
-        </ul>
+    <section id="cards" class="container">
+      <div class="card-grid">
+        <a class="card-link" href="phonology.html">
+          <span class="card-icon" aria-hidden="true">⌁</span>
+          <h2 class="card-title">音素・音韻</h2>
+          <p class="card-text">音素体系、音節構造、母音連続、鼻音保持規則など</p>
+        </a>
+
+        <a class="card-link" href="morphology.html">
+          <span class="card-icon" aria-hidden="true">⟟</span>
+          <h2 class="card-title">形態論</h2>
+          <p class="card-text">品詞、語形成、接辞、活用（後から追加しやすい雛形）</p>
+        </a>
+
+        <a class="card-link" href="syntax.html">
+          <span class="card-icon" aria-hidden="true">⤴</span>
+          <h2 class="card-title">統語論</h2>
+          <p class="card-text">語順、否定・疑問、修飾、関係節など</p>
+        </a>
+
+        <a class="card-link" href="examples.html">
+          <span class="card-icon" aria-hidden="true">✶</span>
+          <h2 class="card-title">例文</h2>
+          <p class="card-text">コーパスや例文から文法項目へリンク（後で整備）</p>
+        </a>
+
+        <a class="card-link" href="dictionary.html">
+          <span class="card-icon" aria-hidden="true">⌘</span>
+          <h2 class="card-title">辞書</h2>
+          <p class="card-text">単語帳・ダウンロード・語形成の参照（後で整備）</p>
+        </a>
+
+        <a class="card-link" href="https://github.com/Ranteliye/Ranteliye-grammar">
+          <span class="card-icon" aria-hidden="true">↗</span>
+          <h2 class="card-title">GitHub</h2>
+          <p class="card-text">ソース管理と編集はここから</p>
+        </a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    最終更新：2026-06-13
-  </footer>
+  <footer class="site-footer">最終更新：2026-06-13</footer>
 </body>
+
 </html>
